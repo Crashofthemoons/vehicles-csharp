@@ -10,8 +10,28 @@ namespace vehicles
         public static void Main() {
 
             // Build a collection of all vehicles that fly
-            Plane SmallPlane = new Plane();
-            Plane Boeing = new Plane();
+            Plane SmallPlane = new Plane()
+            {
+                Wheels= 3,
+                Doors = 3,
+                PassengerCapacity = 113,
+                Winged = true,
+                TransmissionType = "None",
+                EngineVolume = 31.1,
+                MaxAirSpeed = 309.0,
+                MaxLandSpeed = 100
+            };
+            Plane Boeing = new Plane()
+            {
+                Wheels= 3,
+                Doors = 3,
+                PassengerCapacity = 113,
+                Winged = true,
+                TransmissionType = "None",
+                EngineVolume = 31.1,
+                MaxAirSpeed = 309.0,
+                MaxLandSpeed = 100
+            };
             List<Plane> Planes = new List<Plane>();
             Planes.Add(SmallPlane);
             Planes.Add(Boeing);
@@ -24,9 +44,22 @@ namespace vehicles
             // Build a collection of all vehicles that operate on roads
             Drivers Car = new Drivers()
             {
-
+                Wheels = 4,
+                Doors = 4,
+                PassengerCapacity = 8,
+                TransmissionType = "Automatic",
+                EngineVolume = 2.0,
+                MaxLandSpeed = 100
             };
-            Drivers Train = new Drivers();
+            Drivers Train = new Drivers()
+            {
+                Wheels = 90,
+                Doors = 10,
+                PassengerCapacity = 5000,
+                TransmissionType = "Manual",
+                EngineVolume = 2.0,
+                MaxLandSpeed = 200
+            };
             List<Drivers> Drives = new List<Drivers>();
             Drives.Add(Car);
             Drives.Add(Train);
@@ -37,8 +70,22 @@ namespace vehicles
             }
             // Build a collection of all vehicles that operate on water
 
-            Floaters Boat = new Floaters();
-            Floaters JetSki = new Floaters();
+            Floaters Boat = new Floaters()
+            {
+                Doors = 0,
+                PassengerCapacity = 6,
+                TransmissionType = "Water",
+                EngineVolume = 5,
+                MaxWaterSpeed = 40
+            };
+            Floaters JetSki = new Floaters()
+            {
+                Doors = 0,
+                PassengerCapacity = 6,
+                TransmissionType = "Water",
+                EngineVolume = 5,
+                MaxWaterSpeed = 40
+            };
             List<Floaters> Floats = new List<Floaters>();
             Floats.Add(Boat);
             Floats.Add(JetSki);

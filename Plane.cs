@@ -6,15 +6,15 @@ namespace vehicles
 {
     public class Plane : IFly, IDrive
 {
-  public int Wheels { get; set; } = 3;
-  public int Doors { get; set; } = 3;
-  public int PassengerCapacity { get; set; } = 113;
-  public bool Winged { get; set; } = true;
-  public string TransmissionType { get; set; } = "None";
-  public double EngineVolume { get; set; } = 31.1;
-  public double MaxAirSpeed { get; set; } = 309.0;
+  public int Wheels { get; set; }
+  public int Doors { get; set; }
+  public int PassengerCapacity { get; set; }
+  public bool Winged { get; set; }
+  public string TransmissionType { get; set; }
+  public double EngineVolume { get; set; }
+  public double MaxAirSpeed { get; set; }
 
-  public double MaxLandSpeed { get; set; } = 100;
+  public double MaxLandSpeed { get; set; }
 
   public void Drive()
   {
